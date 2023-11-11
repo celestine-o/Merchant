@@ -1,0 +1,36 @@
+﻿<link rel="stylesheet" href="~/css/card.css" />
+@model IEnumerable<Merchant.Models.Product>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<p>
+    <a asp-action="Create">Create Product</a>
+</p>
+<div>
+    <div class="card-container" style="display: -ms-flexbox">
+        @if (Model == null)
+        {
+            <p>No product have been added</p>
+        }
+        else
+        {
+            @foreach (var obj in Model)
+            {
+                <a asp-controller="Product" asp-action="Details" asp-route-id="@obj.Id">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src=@obj.ImageLink class="card-img-top"/>
+                        </div>
+                        <div class="container">
+                            <h4 class="card-title">@obj.Name</h4>
+                            <p class="city">@obj.Price</p>
+                        </div>
+                    </div>
+                </a>
+
+            }
+        }
+    </div>
+</div>
