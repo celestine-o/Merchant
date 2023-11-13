@@ -11,7 +11,7 @@
     transition: 0.3s;
     margin: 0.5rem;
     width: 18rem;
-    height: 16rem;
+    height: 20rem;
     overflow: hidden;
 }
 
@@ -21,8 +21,8 @@
 
 .card-image {
     margin: 0.5rem;
-    width: 18rem;
-    height: 16rem;
+    width: 17rem;
+    height: 18rem;
     overflow: hidden;
 }
 
@@ -33,7 +33,7 @@
 }
 
 .container {
-    padding: 20px;
+    padding: 0px 5px 0px 5px;
 }
 
 .title {
@@ -41,6 +41,7 @@
     font-weight: bold;
 }
 
-.description {
+.price {
     font-size: 16px;
+    padding: 0px 5px 0px 5px;
 }
