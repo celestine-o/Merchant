@@ -10,7 +10,7 @@ namespace Merchant.Models
         public required string Name { get; set; }
         [DisplayName("Image Link")]
         public string ImageLink { get; set; }
-        public string Price { get; set; }
+        public float Price { get; set; }
         public string Description { get; set; }
     }
 }
