@@ -6,13 +6,13 @@ namespace Merchant.Models
     public class Cart
     {
         public int Id { get; set; }
-        // The list of items in the cart
+        // The list of OrderItems in the cart
         public List<OrderItem> OrderItems { get; set; }
 
         // The total amount of the cart
         public float Total { get; set; }
 
-        // The number of items in the cart
+        // The number of OrderItems in the cart
         public int Count { get; set; }
 
         // The constructor that initializes the properties
@@ -70,7 +70,7 @@ namespace Merchant.Models
         // The method that clears the cart
         public void Clear()
         {
-            // Clear the list of items
+            // Clear the list of OrderItems
             OrderItems.Clear();
 
             // Reset the total and the count
